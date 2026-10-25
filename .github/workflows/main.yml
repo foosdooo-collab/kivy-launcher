@@ -59,11 +59,11 @@ jobs:
         run: |
           buildozer -v android debug
 
+      
       - name: Upload APK
-        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: android14-debug-apk
+          name: android-apk
           path: '**/*.apk'
           if-no-files-found: error
           retention-days: 14
