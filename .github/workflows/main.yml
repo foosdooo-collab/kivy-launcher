@@ -64,6 +64,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: android14-debug-apk
-          path: bin/*.apk
+          path: '**/*.apk'
           if-no-files-found: error
           retention-days: 14
